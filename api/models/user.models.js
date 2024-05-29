@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-    }
+    },
+    profilePicture: {
+        type: String,
+        default: "https://laiacc.com/wp-content/uploads/2019/03/blank-profile-picture-973460_1280-1030x1030.png",
+    },
 }, {timestamps: true}
 );
 
